@@ -1,0 +1,75 @@
+body{
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#landing-page > img{
+    width: 100%;
+    height: 65rem;
+    margin: 0;
+    padding: 0;
+}
+
+#phone-screen{
+    position: absolute;
+    background-image: url('../Images/background-img.jpg');
+    top: 5%;
+    margin: 5rem;
+    margin-left: 35%;
+    width: 35%;
+    height: 50rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    box-shadow: 10px 10px 5px rgb(27, 26, 26);
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+#main-image{
+    position: absolute;
+    padding: 0;
+    width: 50%;
+    height: 45%;
+    margin-left: 6%;
+    bottom: 30%;
+}
+
+#main-image img{
+    height: 25rem;
+    width: 25rem;
+}
+
+.button{
+    position: absolute;
+    bottom: 4rem;
+    text-align: center;
+    margin-left: 27%;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 0px 2px 0px 2px;
+    height: 8rem;
+    border-radius: 20px;
+    color: rgb(173, 34, 173);
+    color: black;
+    background-color: transparent;
+    background: linear-gradient(145deg, #cc64a1, #d9d9d9);
+    box-shadow: 5px 5px 10px #383636, -5px -5px 10px #383636;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button:hover{
+    box-shadow: none;
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 10px #383636, inset -5px -5px 10px #383636; /* Inner shadow */
+    transform: translateY(3px); 
+}
