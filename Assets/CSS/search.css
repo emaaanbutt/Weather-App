@@ -9,48 +9,119 @@
 #phone-screen{
     position: absolute;
     background-image: url('../Images/background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 5%;
-    margin: 5rem;
-    margin-left: 35%;
-    width: 35%;
+    margin: 3%;
+    width: 90%;
     height: 50rem;
     border: 2px solid black;
     border-radius: 3rem;
     box-shadow: 10px 10px 5px rgb(27, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 30%;
 }
 
 .custom{
-    position: absolute;
+    position: relative;
     top: 5rem;
 }
 
+.container-fluid{
+    position: relative;
+    width: 50rem !important;
+    left: 7%;
+}
+
 .size{
-    width: 20rem;
+    width: 70% !important;
     height: 3rem;
 }
 
 #button:hover{
-    color: white;
-    background-color: blueviolet;
+    color: white !important;
+    background-color: rgb(216, 149, 24);
 }
 
 #container{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 2rem;
     position: absolute;
     list-style: none;
-    top: 10rem;
+    top: 13rem;
+    left: 15%;
+    z-index: 20;
 }
 
 .recent-search{
-    width: 25rem;
+    width: 300px;
     height: 7rem;
     border: 2px solid black;
     border-radius: 10px;
+    
+}
+
+#recent-search1{
+    animation: slide 0.5s linear;
+}
+
+#recent-search2{
+    animation: slide 0.7s linear;
+}
+
+#recent-search3{
+    animation: slide 0.9s linear;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(250px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+#logo-img{
+    margin-top: -18rem;
+    margin-left: 78%;
+}
+
+#logo-img img{
+    width: 250px;
+    height: 150px;
 }
 
 #main-img{
-    margin-top: 25rem;
-    margin-right: 5rem;
+    position: absolute;
+    bottom: 0rem;
+    margin-left: 50%;
+}
+
+#back-btn{
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    width: 100px;
+    height: 48px;
+    border: 2px solid rgb(216, 149, 24);
+    border-radius: 10px;
+    text-align: center;
+    color:rgb(216, 149, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-btn h2{
+    font-size: 25px;
+}
+
+#back-btn:hover{
+    background-color: rgb(216, 149, 24);
+    color: white;
 }

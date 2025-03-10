@@ -1,0 +1,15 @@
+@media (max-width: 800px){
+    #phone-screen{
+        margin: 1%;
+    }
+
+    #heading h1{
+        font-size: 70px;
+    }
+
+    #main-image{
+        width: 100%;
+        height: 100%;
+    }
+   
+}

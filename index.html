@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weatherly</title>
     <link rel="stylesheet" href="./Assets/CSS/index.css">
+    <link rel="stylesheet" href="./Assets/CSS/index-responsiveness.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +14,21 @@
 <body>
     <div id="landing-page">
         <img src="./Assets/Images/background.jpg" alt="background image of pastel clouds">
-        <div id="phone-screen">
-            <h1>Weatherly</h1>
-            <div id="main-image">
+        <ul id="phone-screen">
+            <li id="heading">
+                <h1>Weatherly</h1>
+            </li>
+            <li id="main-image">
                 <img src="./Assets/Images/sun-and-cloud.png" alt="weather icons">
-            </div>
-            <a href="./pages/search.html">
-                <div class="button">
-                    <h2>Get started</h2>
-                </div>
-            </a>
-        </div>
+            </li>
+            <li id="start-btn">
+                <a href="./pages/search.html">
+                    <div class="button">
+                        <h2>Get started</h2>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>

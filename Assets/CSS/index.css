@@ -2,11 +2,14 @@ body{
     font-family: "Sigmar", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
+    
 
 #landing-page > img{
     width: 100%;
-    height: 65rem;
+    height: 60rem;
     margin: 0;
     padding: 0;
 }
@@ -14,64 +17,84 @@ body{
 #phone-screen{
     position: absolute;
     background-image: url('../Images/background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 5%;
-    margin: 5rem;
-    margin-left: 35%;
-    width: 35%;
+    margin: 3%;
+    width: 90%;
     height: 50rem;
     border: 2px solid black;
     border-radius: 3rem;
     box-shadow: 10px 10px 5px rgb(27, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 30%;
+}
+
+#phone-screen li{
+    flex-basis: 20%;
+}
+
+#heading{
+    flex: 1;
 }
 
 h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 100px;
 }
 
 #main-image{
-    position: absolute;
-    padding: 0;
-    width: 100%;
-    height: 45%;
-    margin-left: 0%;
-    bottom: 30%;
-    right: 15%;
+    position: relative;
+    flex:1;
+    width: 60%;
+    bottom: 40%;
 }
 
 #main-image img{
     position: absolute;
-    height: 25rem;
-    width: 40rem;
+    padding: 0;
+    height: 150%;
+    width: 100%;    
+}
+
+#start-btn{
+    position: absolute;
+    flex:1;
+    bottom: 7%;
+}
+
+#start-btn a{
+    text-decoration: none;
 }
 
 .button{
-    position: absolute;
-    bottom: 4rem;
+    position: relative;
     text-align: center;
-    margin-left: 27%;
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
     border: 2px solid black;
     padding: 0px 2px 0px 2px;
-    height: 8rem;
+    height: 60px;
+    width: 100%;
     border-radius: 20px;
     color: rgb(173, 34, 173);
     color: black;
-    background-color: transparent;
-    background: linear-gradient(145deg, #cc64a1, #d9d9d9);
-    box-shadow: 5px 5px 10px #383636, -5px -5px 10px #383636;
+    background-color: rgb(160, 217, 252);
+    /* background-image: url('../Images/background.jpg'); */
     transition: all 0.2s ease-in-out;
     outline: none;
     font-family: "Acme", sans-serif;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
 }
 
 .button:hover{
-    box-shadow: none;
-}
-
-.button:active {
-    box-shadow: inset 5px 5px 10px #383636, inset -5px -5px 10px #383636; /* Inner shadow */
-    transform: translateY(3px); 
+    background-color: rgb(216, 149, 24);
+    color: white;
 }

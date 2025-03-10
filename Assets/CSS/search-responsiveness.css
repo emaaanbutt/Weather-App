@@ -1,0 +1,69 @@
+@media (min-width: 670px) and (max-width: 950px){
+    .container-fluid{
+        width: 35rem !important;
+    }
+
+    @keyframes slide {
+        0% {
+          transform: translateX(160px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      #logo-img{
+        margin-left: 78%;
+      }
+
+      #main-img{
+        margin-left: 50%;
+      }
+
+      #main-img img{
+        width: 100%;
+      }
+
+
+}
+
+@media (max-width: 670px){
+    .container-fluid{
+        width: 27rem !important;
+    }
+
+    #recent-search1{
+        animation: none;
+    }
+    
+    #recent-search2{
+        animation: none;
+    }
+    
+    #recent-search3{
+        animation: none;
+    }
+
+    #container{
+        left: 7%;
+    }
+
+    #back-btn{
+        left: 14%;
+    }
+
+    #logo-img{
+        margin-left: 65%;
+        margin-top: 19rem;
+      }
+
+      #logo-img img{
+        width: 300px;
+        height: 200px;
+    }
+
+    #main-img{
+        display: none;
+    }
+
+}
