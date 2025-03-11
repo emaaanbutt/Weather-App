@@ -57,25 +57,34 @@
     z-index: 20;
 }
 
+#container a{
+    text-decoration: none;
+}
+
 .recent-search{
     width: 300px;
     height: 7rem;
     border: 2px solid black;
     border-radius: 10px;
-    
+    padding: 10px;
 }
 
 #recent-search1{
+    position: relative;
     animation: slide 0.5s linear;
 }
 
 #recent-search2{
+    position: relative;
     animation: slide 0.7s linear;
 }
 
 #recent-search3{
+    position: relative;
     animation: slide 0.9s linear;
 }
+
+
 
 @keyframes slide {
     0% {
@@ -85,6 +94,28 @@
       transform: translateX(0);
     }
   }
+
+
+.city{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(216, 149, 24);
+}
+
+.max-min-temp, .AQI{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.temperature{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
 
 #logo-img{
     margin-top: -18rem;
