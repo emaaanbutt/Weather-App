@@ -32,6 +32,14 @@
         width: 27rem !important;
     }
 
+    .city{
+      font-size: 30px;
+    }
+
+    .recent-search{
+      width: 300px;
+    }
+
     #recent-search1{
         animation: none;
     }
