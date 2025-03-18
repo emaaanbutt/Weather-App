@@ -41,6 +41,10 @@
     height: 3rem;
 }
 
+#button{
+    height: 3rem;
+}
+
 #button:hover{
     color: white !important;
     background-color: rgb(216, 149, 24);

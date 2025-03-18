@@ -53,7 +53,7 @@
     }
 
     #container{
-        left: 7%;
+        left: 3%;
     }
 
     #back-btn{
@@ -74,4 +74,19 @@
         display: none;
     }
 
+}
+
+@media (max-width: 450px)
+{
+  .container-fluid{
+    left: 0rem;
+    width: 20rem !important;
+}
+.recent-search{
+  width: 250px;
+}
+
+.temperature{
+  font-size: 35px;
+}
 }

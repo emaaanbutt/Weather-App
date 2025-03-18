@@ -16,9 +16,9 @@
         <div id="phone-screen">
             <nav class="navbar custom">
                 <div class="container-fluid">
-                  <form class="d-flex" role="search" style="width: 100%;">
-                    <input class="form-control me-2 size" type="search" placeholder="Search city" aria-label="Search">
-                    <button id="button" class="btn btn-outline-success button" type="submit" style="color: rgb(216, 149, 24); border:2px solid rgb(216, 149, 24);" >Search</button>
+                  <form class="d-flex" role="search" onsubmit="submitForm(event)" style="width: 100%;">
+                    <input class="form-control me-2 size"  type="search" placeholder="Search city" aria-label="Search">
+                        <button id="button" type="submit" onclick="searchCity()" onsubmit="searchCity()" class="btn button-primary" style="color: rgb(216, 149, 24); border:2px solid rgb(216, 149, 24);" >Search</button>
                   </form>
                 </div>
             </nav>
@@ -97,5 +97,7 @@
             </a>
         </div>
     </div>
+
+    <script src="../Assets/script/search.js" charset="UTF-8"></script>
 </body>
 </html>

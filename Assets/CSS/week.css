@@ -54,6 +54,14 @@
     color: white;
 }
 
+#city{
+    position: absolute;
+    top: -1.5rem;
+    color: black;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 #days-container{
     position: absolute;
     bottom: 0;
@@ -62,7 +70,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
     overflow-y: auto; 
     height: 120vh;
     scrollbar-width: none;
@@ -76,7 +84,8 @@
 .day{
     height: 220px;
     min-width: 240px;
-    margin-bottom: 1rem;
+    margin: 1rem;
+    margin-bottom: 0.25rem;
     flex: 1 1 1;
     border-radius: 20px;
     display: flex;
