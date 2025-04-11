@@ -17,8 +17,11 @@
             <nav class="navbar custom">
                 <div class="container-fluid">
                   <form class="d-flex" role="search" onsubmit="submitForm(event)" style="width: 100%;">
-                    <input class="form-control me-2 size"  type="search" placeholder="Search city" aria-label="Search">
+                    <input id="cityInput" class="form-control me-2 size"  type="search" placeholder="Search city" aria-label="Search">
                         <button id="button" type="submit" onclick="searchCity()" onsubmit="searchCity()" class="btn button-primary" style="color: rgb(216, 149, 24); border:2px solid rgb(216, 149, 24);" >Search</button>
+                        <ul class="size" id="suggestions">
+
+                        </ul>
                   </form>
                 </div>
             </nav>
@@ -98,6 +101,7 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../Assets/script/search.js" charset="UTF-8"></script>
 </body>
 </html>

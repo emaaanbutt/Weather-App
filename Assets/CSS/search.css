@@ -41,6 +41,35 @@
     height: 3rem;
 }
 
+#suggestions{
+    list-style: none;
+    padding: 0;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: #fff0f5;
+    border: 1px solid #f5a3c7;
+    border-radius: 10px;
+    height: 200px;
+    overflow-y: auto;
+    margin-top: 47px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+#suggestions li:hover {
+    background-color: #ffe4ec;
+}
+
 #button{
     height: 3rem;
 }

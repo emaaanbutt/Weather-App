@@ -62,6 +62,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+
 #days-container{
     position: absolute;
     bottom: 0;
@@ -93,6 +94,7 @@
     align-items: center;
 
 }
+
 
 #day-1{
     background-image: url('../Images/sunny-bg.jpg');
