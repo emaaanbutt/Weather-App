@@ -14,56 +14,57 @@ function searchCity()
     }
 }
 
-$(function() {
-    $('#cityInput').on('input', function() {
-        var query = $(this).val().trim();
 
-        if (query.length < 2) {
-            $('#suggestions').empty().hide(); 
-            return;
-        }
 
-        let api_url = 'https://api.api-ninjas.com/v1/city?name=' + encodeURIComponent(query) + '&limit=5';
+// $(function() {
+//     $('#cityInput').on('input', function() {
+//         var query = $(this).val().trim();
 
-        $.ajax({
-            url: api_url,
-            method: 'GET',
-            headers: {
-                'X-Api-Key': 'd/X07qv9XuiDWVpGkNL8g==ZbJlrqForjZq9w9F'
-            },
-            success: function(response) {
-                $('#suggestions').empty();
+//         if (query.length < 2) {
+//             $('#suggestions').empty().hide(); 
+//             return;
+//         }
 
-                if (response.length === 0) {
-                    $('#suggestions').hide(); // No results
-                    return;
-                }
+//         let api_url = 'https://api.api-ninjas.com/v1/city?name=' + encodeURIComponent(query) + '&limit=5';
 
-                response.forEach(function(city) {
-                    $('#suggestions').append('<li>' + city.name + '</li>');
-                });
+//         $.ajax({
+//             url: api_url,
+//             method: 'GET',
+//             headers: {
+//                 'X-Api-Key': 'd/X07qv9XuiDWVpGkNL8g==ZbJlrqForjZq9w9F'
+//             },
+//             success: function(response) {
+//                 $('#suggestions').empty();
 
-                $('#suggestions').show(); // Show only when we have results
+//                 if (response.length === 0) {
+//                     $('#suggestions').hide();
+//                     return;
+//                 }
 
-                $('#suggestions li').on('click', function() {
-                    $('#cityInput').val($(this).text());
-                    $('#suggestions').empty().hide();
-                });
-            },
-            error: function(error) {
-                console.error('Autocomplete error:', error);
-                $('#suggestions').hide(); // hide on error
-            }
-        });
-    });
+//                 response.forEach(function(city) {
+//                     $('#suggestions').append('<li>' + city.name + '</li>');
+//                 });
 
-    // Optional: hide suggestions when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('#cityInput, #suggestions').length) {
-            $('#suggestions').empty().hide();
-        }
-    });
-});
+//                 $('#suggestions').show(); 
+
+//                 $('#suggestions li').on('click', function() {
+//                     $('#cityInput').val($(this).text());
+//                     $('#suggestions').empty().hide();
+//                 });
+//             },
+//             error: function(error) {
+//                 console.error('Autocomplete error:', error);
+//                 $('#suggestions').hide();
+//             }
+//         });
+//     });
+
+//     $(document).on('click', function(e) {
+//         if (!$(e.target).closest('#cityInput, #suggestions').length) {
+//             $('#suggestions').empty().hide();
+//         }
+//     });
+// });
 
 
 

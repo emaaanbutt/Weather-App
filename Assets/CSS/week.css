@@ -65,6 +65,7 @@
 
 #days-container{
     position: absolute;
+    top: 7rem;
     bottom: 0;
     display: flex;
     flex-wrap: wrap;
