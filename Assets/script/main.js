@@ -4,7 +4,7 @@ document.querySelector("#city h2").textContent = city;
 
 $(function(){
 
-    const appid = "ffe8ec1265ed9514e5cdf47c055d0529";
+    const appid = "9d1c367511062c9dae8d07b8aec3c157";
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=" + unit + "&appid="+ appid+""; 
 
@@ -21,8 +21,13 @@ $(function(){
             const temp = weatherData.main.temp;
             const description = weatherData.weather[0].description;
 
+            $("#temp h1").text(`${temp}&deg;`);
 
 
+
+        },
+        error: function(){
+            console.log("Error fetching weather.");
         }
     });
 
