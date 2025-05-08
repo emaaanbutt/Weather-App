@@ -59,10 +59,10 @@
     top: 0.8%;
 }
 
-#time{
+#day{
     position: absolute;
-    font-size: 1rem;
-    top: 10%;
+    font-size: 1.5rem;
+    top: 13%;
 }
 
 #temp{
