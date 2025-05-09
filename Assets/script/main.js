@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 let city = localStorage.getItem("current-city");
 document.querySelector("#city h2").textContent = city;
 
 
 $(function(){
 
-    const appid = "9d1c367511062c9dae8d07b8aec3c157";
+    const appid = process.env.MY_API_KEY;
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=" + unit + "&appid="+ appid+""; 
 
