@@ -1,19 +1,18 @@
-require('dotenv').config();
-
 let city = localStorage.getItem("current-city");
 document.querySelector("#city h2").textContent = city;
 
 
 $(function(){
-
-    const appid = process.env.MY_API_KEY;
-    const unit = "metric";
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=" + unit + "&appid="+ appid+""; 
-
-
     let dateTime = new Date();
     let day = dateTime.toLocaleString('en-US', { weekday: 'long' });
     $("#day").text(day);
+});
+
+$(function(){
+
+    const appid = CONFIG.MY_API_KEY;
+    const unit = "metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=" + unit + "&appid="+ appid+""; 
 
     $.ajax({
         url: url,
